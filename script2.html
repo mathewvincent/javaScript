@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+</head>
+<body>
+    <h1 style="color: Blue">Welcome</h1>
+
+    <p>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 1999-2019 by Refsnes Data. All Rights Reserved.Powered by W3.CSS.</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <button onclick="act()">Click ME.....</button>
+    <p id="demo4"></p>
+    <p id="demo3"></p>
+    <script>
+    	var d = new Date();
+    	var c = new Date();
+    	c.setDate(c.getDate()+1);
+    	document.getElementById("demo1").innerHTML="Today's date and time is "+d;
+    	document.getElementById("demo2").innerHTML="Tomorrows's date and time is "+c;
+    	if (new Date().getHours()<20) {
+    		document.getElementById("demo6").innerHTML="good evening ";
+    	}
+    	if (new Date().getHours()<12) {
+    		document.getElementById("demo6").innerHTML="good morning ";
+    	}
+    	if (20<new Date().getHours()) {
+    		document.getElementById("demo6").innerHTML="good night ";
+    	}
+    	function act(){
+    		document.getElementById("demo4").innerHTML="Thank you ";
+    		document.getElementById("demo3").innerHTML="Here is your lucky Number "+Math.floor(Math.random()*101);
+    	}
+    </script>
+</body>
+</html>
