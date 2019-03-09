@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Pege</title>
+</head>
+<body>
+	<h2 style="text-align: center;">Hello World</h2>
+    <P id="az1"></P>
+    <P id="az2"></P>
+    <P id="az3"></P>
+    <P id="az5"></P>
+    <P id="az6"></P>
+    <P id="az7"></P>
+    <div>
+      <form method="post" action="save.php" name ="data" onsubmit="return check()">
+    	<label>Name:</label>
+    	<input type="text" name="Name">
+    	<br>
+    	<label>Age:</label>
+    	<input type="number" name="age" max=120 min=0>
+    	<br>
+    	<label>Todays Date :</label>
+    	<input type="date" name="date">
+    	<br>
+    	<label>Gender</label>
+    	 <select name="gender">
+    		<option>Male</option>
+    		<option>Female</option>
+    		<option>N/A</option>
+    	 </select>
+    	<br>
+    	<br>
+    	<input type="submit" name="submit">
+      </form>
+    </div>
+    <script>
+      	console.log("Hello");
+      	for (var i = 1; i < 60; i++) {
+      		console.log("Roll no. :"+i);
+      	}
+      	function check() {
+      		var n=document.forms["data"]["Name"].value;
+      		if (n=="") {
+      			alert("Enter Name");
+      			return false;
+      		}
+      		if (n=="James" || n=="james") {
+      			alert("James can not participate");
+      			return false;
+      		}
+      		var a=document.forms["data"]["age"].value;
+      		if (a<18) {
+      			alert("You can not participate in this item. Age limit is above 18 ");
+      			return false;
+      		}
+
+      	}
+    </script>
+</body>
+</html>
