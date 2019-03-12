@@ -16,3 +16,11 @@ footer{
 	text-align: center;
 	float: bottom;
 }
+a{
+	text-decoration: none;
+	background-color: green;
+	color: white;
+	border: 2px solid red;
+	padding: 7px 20px;
+	border-radius: 10px;
+}
