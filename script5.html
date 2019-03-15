@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web</title>
+	<meta charset="utf-8">
+	<meta lang="en">
+</head>
+<body>
+      <script type="text/javascript">
+      	    var thing=[12,"hello",3,2,23,,10,9.889,-87,87654,-12.98];
+      	    for (var i = 0; i < thing.length; i++){
+      	      if(thing[i]==NaN){
+      	   		 var p=thing[i];
+      	   		 console.log( "is not a no.");
+      	   		 continue;
+      	   	  }
+      	   	  if(thing[i]>10){
+      	   		var x=thing[i];
+      	   		console.log(x+" is greater than 10");
+      	   		continue;
+      	   	  }
+      	   	  if(thing[i]<10){
+      	   		var y=thing[i];
+      	   		console.log(y+" is less than 10");
+      	   		continue;     	   		   
+      	   	  }
+      	   	  if(thing[i]===10){
+      	   	    var z=thing[i];
+      	   		console.log(z+" is equal to 10");
+      	   		continue;
+      	   	  }      	   	          	   	  
+      	    }
+      </script>
+</body>
+</html>
