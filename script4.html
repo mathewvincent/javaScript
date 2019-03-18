@@ -26,7 +26,16 @@ Powered by W3.CSS.</footer>
                  };
          
         
-        document.getElementById("demos3").innerHTML="Our address :"+contact.address.street+", "+contact.address.city;          
+        document.getElementById("demos3").innerHTML="Our address :"+contact.address.street+", "+contact.address.city;      
+        function person(name, clas, div, sex) {
+        	this.fullname=name;
+        	this.grade=clas;
+        	this.div=div;
+        	this.sex=sex;
+        }  
+        var person1 = new person("Dev", 10, "B", "Male");
+        var person2 = new person("Khan", 12, "C", "Male");
+        console.log("classes are "+person1.grade+" and "+person2.grade);
     </script>
 </body>
 </html>
