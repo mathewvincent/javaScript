@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>page</title>
+	<meta charset="utf-8">
+	<meta lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<input type="button" name="onclick" value="click to forward" onclick="back()">
+	<script>
+		document.getElementById("demo1").innerHTML = 
+        "Screen width is " + screen.width + "  and Screen height is " + screen.height;
+        document.getElementById("demo2").innerHTML = 
+        "Screen pixel depth is " + screen.pixelDepth;
+        document.getElementById("demo3").innerHTML =
+        "The page protocol is: " + window.location.protocol;
+        var myVar = setInterval(timer, 1000);
+        function timer() {
+         var date = new Date();
+         document.getElementById("demo4").innerHTML ="Time is " +date.toLocaleTimeString();
+         }
+        function back() {
+        	// body...
+        	window.history.forward()
+        }
+    
+	</script>
+</body>
+</html>
