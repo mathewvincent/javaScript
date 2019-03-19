@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web</title>
+	<meta charset="utf-8">
+	<meta lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<p id="demo1">lorem
+	</p>
+	<p id="demo2"></p>
+	<script>
+		function Person(first, last, age, eye) {
+          this.firstname = first;
+          this.lastname = last;
+          this.age = age;
+          this.eyecolor = eye;
+               }
+          var myFather = new Person("John", "Doe", 50, "blue");
+          var x=0;
+          for (x in myFather) {
+            txt += myFather[x] + " ";
+             }
+            document.getElementById("demo2").innerHTML = txt; 
+	</script>
+
+</body>
+</html>
