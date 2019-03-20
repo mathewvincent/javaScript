@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web</title>
+	<meta charset="utf-8">
+	<meta lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<p id="demo1"></p>
+<script>
+	var p = '{"people":[{"name":"john","age":21,"address": { "street":"23 woodview", "zip":98654 }},{"name":"mark","age":37,"address": { "street":"east st", "zip":76454 }},{"name":"Kon","age":44,"address": { "street":"Lakeview Ave", "zip":87540 }}]}'
+var obj = JSON.parse(p);
+document.getElementById("demo1").innerHTML = obj.people[2].name + " is "+obj.people[2].age +" years old."+'<br>'+'His address is "'+ obj.people[2].address.street+"- "+obj.people[2].address.zip+'"';
+
+</script>
+</body>
+</html>
