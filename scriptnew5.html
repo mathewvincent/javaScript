@@ -24,7 +24,7 @@
           <label for="email">Email:</label>
           <input type="text" id="email">
         </div>
-        <input class="btn" type="submit" value="Submit">
+        <input class="btn" type="submit" value="Submit"oncSubmit="onsubmit()">
       </form>
 
       <ul id="users"></ul>
@@ -35,7 +35,10 @@
         <li class="item">Item 3</li>
       </ul>
     </section>
-    <input class="btn" type="submit" value="Click Me " onclick="myfunction()">
+    <input class="btn" type="submit" value="Single element selectors " onclick="myfunction1()">
+
+    <input class="btn" type="submit" value="Multiple element selectors " onclick="myfunction2()">
+    <p id="list"></p>s
     
 
     <script src="main.js"></script>
