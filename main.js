@@ -12,12 +12,10 @@ function myfunction1() {
 	// body...
 
     const text=document.querySelector(".items");
-    //document.getElementById("list").innerHTML = 
-    //    text ;
+    //document.getElementById("list").innerHTML = text ;
         console.log(text);
 
-    //document.querySelectorAll(".item").innerHTML = 
-    //   "New Items " ;
+    //document.querySelectorAll(".item").innerHTML ="New Items " ;
     text.lastElementChild.remove();
     text.firstElementChild.textContent='Still I am first child';
     text.lastElementChild.innerHTML='<h4>Now I am last child</h4>';
