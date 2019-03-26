@@ -1,19 +1,24 @@
-const myform = document.querySelector('#myform');
-const myprice = document.querySelector('#carprice');
-const myapr = document.querySelector('#myapr');
-const mymonth = document.querySelector('#mymonth');
+let myform = document.querySelector('#myform');
+let myprice = document.querySelector('#carprice');
+let myapr = document.querySelector('#myapr');
+let mymonth = document.querySelector('#mymonth');
 
-
+//let x ,y z;
 myform.addEventListener('submit', onSubmit)
 
 function onSubmit(e){
 	e.preventDefault();
+    u= (myapr.value*0.01);
+    w=(u*myprice.value)/(1-((1+u)**(-mymonth.value)));
 
-	if(myprice.value==="" || myapr.value===""){
-      alert("Please Fill the Form Before submit");
-       }
-    else{
-      
-	  console.log("hello");
+    x= (myapr.value*0.01)/12;
+    y=x*myprice.value;
+    z=1+x;
+    p=1-z;
+    q=p**(-mymonth.value);
+    r=1+q;
+    s=z/r;
+    console.log(w);
+    document.querySelector('.myclass1').innerHTML=`Payment is $ ${w}`;
 	  
 }      
