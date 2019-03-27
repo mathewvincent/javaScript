@@ -18,7 +18,7 @@ function onSubmit(e){
     q=p**(-mymonth.value);
     r=1+q;
     s=z/r;
-    console.log(w);
+    console.log(s);
     document.querySelector('.myclass1').innerHTML=`Payment is $ ${w}`;
 	  
 }      
